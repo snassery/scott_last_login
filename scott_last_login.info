@@ -1,5 +1,5 @@
 name = Scotts Last login details
-description = Shows user's last login time stamp.
+description = Shows user's last login time stamp..
 core = 7.x
 package = Login
 
