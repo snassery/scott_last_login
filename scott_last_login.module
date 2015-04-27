@@ -66,7 +66,7 @@ return $block;
 * Get last login details of the user
 * DrupalD
 */
-function _get_last_login() {
+function _get_scott_last_login() {
 global $user;
 $sn__last_login = db_result(db_query('SELECT last_logged FROM {last_login} WHERE uid = %d ORDER BY id DESC LIMIT 1, 1', $user->uid));
 if (empty($sn__last_login)) {
