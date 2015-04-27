@@ -1,0 +1,62 @@
+<?php
+
+/**
+* @file
+*
+* THIS IS THE Schema file for Last login
+*
+* DrupalD
+*/
+
+/**
+* Implementation of hook_install
+*
+* DrupalD
+*/
+function scott_last_login_install() {
+drupal_install_schema('last_login');
+}
+
+/**
+* Implemetation of hook_uninstall FOR THE MODULE
+*
+* DrupalD
+*/
+function scott_last_login_uninstall() {
+drupal_uninstall_schema('last_login');
+}
+
+/**
+* Implemeantation of hook_schema
+*
+* DrupalD
+*/
+function scott_last_login_schema() {
+$schema = array();
+$schema['last_login'] = array(
+'fields' => array(
+'id' => array(
+'type' => 'serial',
+'length' => 11,
+'not null' => TRUE,
+),
+
+'uid' => array(
+'type' => 'int',
+'length' => 11,
+'not null' => TRUE,
+),
+
+'last_logged' => array(
+'type' => 'int',
+'length' => 11,
+'not null' => TRUE,
+),
+
+),
+'primary key' => array('id'),
+);
+
+return $schema;
+}
+?>
