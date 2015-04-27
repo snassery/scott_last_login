@@ -3,7 +3,7 @@ description = Shows user's last login time stamp..
 core = 7.x
 package = Login
 
-dependencies[] = ctools
+dependencies[] = block
 version = 7.x-1.0
 
 
